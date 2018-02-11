@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>wellcome <span id="span">!</span> </p>
+  </body>
+
+<script type="text/javascript">
+  var http = new XMLHttpRequest();
+  http.onreadystatechange = function(){
+    if(http.readyState == 4 && http.status == 200){
+          var data = http.response;
+          var parsedData = JSON.parse(data);
+          console.log(parsedData);
+          document.getElementById('span').innerHTML = parsedData[1].name;
+    }
+  };
+  http.open('GET','http://localhost:3000/stranica',true)
+  http.send();
+
+</script>
+
+</html>

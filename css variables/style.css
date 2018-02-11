@@ -1,0 +1,46 @@
+:root{
+  --my-color:red;
+  --my-other-color:green;
+  --myborder:5px solid blue;
+}
+
+.mydiv{
+  height: 150px;
+  border: 2px solid black;
+  background-color:var(--my-color);
+}
+
+.mydiv1{
+  height: 150px;
+  border: 2px solid black;
+  background-color:var(--my-color);
+}
+
+.mydiv2{
+  height: 150px;
+  border: 2px solid black;
+  background-color:var(--my-other-color);
+}
+
+.mydiv3{
+  height: 150px;
+  border: 2px solid black;
+  background-color:var(--my-other-color);
+}
+
+span{
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.div4{
+  height: 150px;
+  border: 2px solid black;
+}
+
+.div5{
+  height: 200px;
+  border:var(--myborder);
+}

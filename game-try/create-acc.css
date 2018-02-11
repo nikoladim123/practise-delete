@@ -1,0 +1,41 @@
+/* Create Account */
+body{
+  background-color: black;
+}
+
+.acc-div{
+  padding: 15px;
+  background-color: white;
+  margin-top: 30vh;
+  font-size: 1.5rem;
+  display: block;
+  position: relative;
+  width: 40vw;
+  margin-left: 50vw;
+  left: -20vw;
+  border-radius: 10px;
+}
+
+.acc-div input{
+  margin-left: 5vw;
+  height: 3vh;
+  width: 30vw;
+}
+
+.acc-div p{
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.acc-div button{
+  border-radius: 15px;
+  font-size: 1.2rem;
+  margin-top: 2vh;
+  height: 4vh;
+  position: relative;
+  width: 100%;
+}
+
+.acc-div button:hover{
+  background: gray;
+}

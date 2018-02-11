@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Wellcome <span id='span'></span>!</h1>
+  </body>
+  <script type="text/javascript">
+    var http = new XMLHttpRequest();
+    http.open('GET','http://localhost:3000/send-json',true);
+    http.send();
+    http.onreadystatechange = function(){
+      if(http.readyState == 4 && http.status == 200){
+        var data = http.response;
+        var dataParsed = JSON.parse(data);
+        document.getElementById('span').innerHTML = dataParsed[dataParsed.length-1].name;
+      }
+    };
+
+  </script>
+</html>

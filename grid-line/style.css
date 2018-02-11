@@ -1,0 +1,51 @@
+:root{
+  --border:2px solid red;
+}
+
+.wraper{
+  padding: 10px;
+  grid-gap: 10px;
+  display: grid;
+  border: 2px solid black;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: minmax(200px,auto);
+}
+
+.one{
+  background: red;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.two{
+  border: var(--border);
+  grid-column: 4/5;
+  grid-row: 1/4;
+}
+
+.three{
+  border: var(--border);
+  grid-area:4/2/5/5;
+  /* grid-area:row-start/col-start/row-end/col-end;*/
+}
+
+.four{
+  border: var(--border);
+  grid-area: 2/1/5/2;
+}
+
+.five{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  display: grid;
+  border: var(--border);
+  grid-area:2/2/4/4;
+}
+
+p{
+  padding: 15px;
+  margin: 0;
+  border: 1px solid black;
+}
