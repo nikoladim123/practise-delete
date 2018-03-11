@@ -2,9 +2,11 @@
   border: 1px solid blue;
   width: 100px;
   height: 100px;
+  position: absolute;
 }
 
 .wraper{
+  position: relative;
   border: 1px solid black;
   width: 500px;
   height: 500px;
